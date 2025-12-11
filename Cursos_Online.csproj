@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>disable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Vistas\Reportes\Reporte_CursosPorEstudiante.rdlc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Vistas\Reportes\Reporte_CursosPorEstudiante.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.22" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.22">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.22">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.3" />
+	  <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.8.0" />
+	  <PackageReference Include="ReportViewerCore.WinForms" Version="15.1.27" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Vistas\Reportes\DS_CursosPorEstudiante.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DS_CursosPorEstudiante.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Vistas\Reportes\DS_CursosPorEstudiante.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_CursosPorEstudiante.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
