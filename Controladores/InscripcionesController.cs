@@ -30,17 +30,17 @@ namespace Cursos_Online.Controladores
         {
             try
             {
-                // Validaciones de negocio:
-                // 1) estudiante y curso activos
+                //Validaciones de negocio:
+                //1. estudiante y curso activos
                 var estudiante = _context.Estudiantes.Find(ins.EstudianteId);
                 var curso = _context.Cursos.Find(ins.CursoId);
                 if (estudiante == null || estudiante.Estado == false) return false;
                 if (curso == null || curso.Estado == false) return false;
 
-                // 2) evitar duplicados (unique enforced en BD, pero validamos antes)
+                //2. evitar duplicados (unique enforced en BD pero validamos antes)
                 if (InscripcionExiste(ins.EstudianteId, ins.CursoId)) return false;
 
-                // 3) verificar capacidad si está definida
+                //3. verificar capacidad si está definida
                 if (curso.Capacidad.HasValue)
                 {
                     var inscritos = _context.Inscripciones.Count(i => i.CursoId == ins.CursoId && i.Estado != "Cancelado");
@@ -64,7 +64,7 @@ namespace Cursos_Online.Controladores
                 var existente = _context.Inscripciones.Find(ins.InscripcionId);
                 if (existente != null)
                 {
-                    // solo actualizamos campos permitidos
+                    //solo actualizamos campos permitidos
                     existente.Estado = ins.Estado;
                     existente.Nota = ins.Nota;
                     existente.FechaActualizacion = DateTime.Now;
@@ -78,7 +78,7 @@ namespace Cursos_Online.Controladores
             }
         }
 
-        // Eliminación lógica: marcar como Cancelado
+        //eliminación lógica, marcamos como cancelado
         public bool EliminarInscripcion(int id)
         {
             try

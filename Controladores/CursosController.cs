@@ -13,7 +13,7 @@ namespace Cursos_Online.Controladores
         {
             return _context.Cursos
                 .Where(c => c.Estado == true)
-                .Include(c => c.Profesor) // incluye info de profesor si la necesitas en la vista
+                .Include(c => c.Profesor) //incluye info del profe
                 .OrderBy(c => c.Titulo)
                 .ToList();
         }
@@ -66,7 +66,7 @@ namespace Cursos_Online.Controladores
             }
         }
 
-        // Eliminación lógica
+        //eliminación lógica
         public bool EliminarCurso(int id)
         {
             try

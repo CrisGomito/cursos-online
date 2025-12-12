@@ -49,7 +49,7 @@ namespace Cursos_Online.Controladores
                     prof.Email = profesor.Email;
                     prof.Telefono = profesor.Telefono;
                     prof.Direccion = profesor.Direccion;
-                    // No tocamos fecha_creacion ni id
+                    //no tocamos fecha de creacion ni id
                     prof.Estado = profesor.Estado;
                 }
                 _context.SaveChanges();
@@ -61,7 +61,7 @@ namespace Cursos_Online.Controladores
             }
         }
 
-        // Eliminación lógica
+        //eliminación lógica
         public bool EliminarProfesor(int id)
         {
             try

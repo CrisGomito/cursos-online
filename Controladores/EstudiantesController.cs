@@ -60,7 +60,7 @@ namespace Cursos_Online.Controladores
             }
         }
 
-        // Eliminación lógica
+        //eliminación lógica
         public bool EliminarEstudiante(int id)
         {
             try

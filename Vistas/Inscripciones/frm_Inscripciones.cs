@@ -61,7 +61,7 @@ namespace Cursos_Online.Vistas.Inscripciones
             var estudianteId = (int)cmb_Estudiante.SelectedValue;
             var cursoId = (int)cmb_Curso.SelectedValue;
 
-            // Lógica de validación ya en controller (InscripcionesController.AgregarInscripcion)
+            //en controlador ya hay lógica de validación
             var nueva = new Inscripcione
             {
                 EstudianteId = estudianteId,
@@ -113,7 +113,7 @@ namespace Cursos_Online.Vistas.Inscripciones
 
         private void lst_Inscripciones_DoubleClick(object sender, EventArgs e)
         {
-            // Mostrar detalles simples
+            //muestra detalles simples
             if (lst_Inscripciones.SelectedItem == null) return;
             var id = (int)((dynamic)lst_Inscripciones.SelectedValue);
             var ins = _insController.ObtenerInscripcionPorId(id);

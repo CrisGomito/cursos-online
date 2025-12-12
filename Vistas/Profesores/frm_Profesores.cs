@@ -23,7 +23,7 @@ namespace Cursos_Online.Vistas.Profesores
         {
             var lista = _controller.ObtenerProfesores();
             lst_Profesores.DataSource = lista;
-            lst_Profesores.DisplayMember = "NombreCompleto"; // asumiendo NotMapped NombreCompleto
+            lst_Profesores.DisplayMember = "NombreCompleto"; //no se mapea en la DB
             lst_Profesores.ValueMember = "ProfesorId";
         }
 
