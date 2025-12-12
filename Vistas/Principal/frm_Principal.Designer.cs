@@ -53,6 +53,10 @@
             herramientasToolStripMenuItem = new ToolStripMenuItem();
             personalizarToolStripMenuItem = new ToolStripMenuItem();
             opcionesToolStripMenuItem = new ToolStripMenuItem();
+            cursosToolStripMenuItem = new ToolStripMenuItem();
+            estudiantesToolStripMenuItem = new ToolStripMenuItem();
+            inscripcionesToolStripMenuItem = new ToolStripMenuItem();
+            profesoresToolStripMenuItem = new ToolStripMenuItem();
             ayudaToolStripMenuItem = new ToolStripMenuItem();
             contenidoToolStripMenuItem = new ToolStripMenuItem();
             índiceToolStripMenuItem = new ToolStripMenuItem();
@@ -62,10 +66,6 @@
             label1 = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
             lbl_Reloj = new Label();
-            cursosToolStripMenuItem = new ToolStripMenuItem();
-            estudiantesToolStripMenuItem = new ToolStripMenuItem();
-            inscripcionesToolStripMenuItem = new ToolStripMenuItem();
-            profesoresToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -234,69 +234,6 @@
             opcionesToolStripMenuItem.Size = new Size(164, 26);
             opcionesToolStripMenuItem.Text = "&Opciones";
             // 
-            // ayudaToolStripMenuItem
-            // 
-            ayudaToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { contenidoToolStripMenuItem, índiceToolStripMenuItem, buscarToolStripMenuItem, toolStripSeparator5, acercadeToolStripMenuItem });
-            ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            ayudaToolStripMenuItem.Size = new Size(66, 25);
-            ayudaToolStripMenuItem.Text = "&Ayuda";
-            // 
-            // contenidoToolStripMenuItem
-            // 
-            contenidoToolStripMenuItem.Name = "contenidoToolStripMenuItem";
-            contenidoToolStripMenuItem.Size = new Size(180, 26);
-            contenidoToolStripMenuItem.Text = "&Contenido";
-            // 
-            // índiceToolStripMenuItem
-            // 
-            índiceToolStripMenuItem.Name = "índiceToolStripMenuItem";
-            índiceToolStripMenuItem.Size = new Size(180, 26);
-            índiceToolStripMenuItem.Text = "Índ&ice";
-            // 
-            // buscarToolStripMenuItem
-            // 
-            buscarToolStripMenuItem.Name = "buscarToolStripMenuItem";
-            buscarToolStripMenuItem.Size = new Size(180, 26);
-            buscarToolStripMenuItem.Text = "&Buscar";
-            // 
-            // toolStripSeparator5
-            // 
-            toolStripSeparator5.Name = "toolStripSeparator5";
-            toolStripSeparator5.Size = new Size(177, 6);
-            // 
-            // acercadeToolStripMenuItem
-            // 
-            acercadeToolStripMenuItem.Name = "acercadeToolStripMenuItem";
-            acercadeToolStripMenuItem.Size = new Size(180, 26);
-            acercadeToolStripMenuItem.Text = "&Acerca de...";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
-            label1.Location = new Point(321, 60);
-            label1.Margin = new Padding(5, 0, 5, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(128, 30);
-            label1.TabIndex = 1;
-            label1.Text = "Bienvenido";
-            // 
-            // timer1
-            // 
-            timer1.Interval = 1000;
-            timer1.Tick += timer1_Tick;
-            // 
-            // lbl_Reloj
-            // 
-            lbl_Reloj.AutoSize = true;
-            lbl_Reloj.Font = new Font("Segoe UI", 12F);
-            lbl_Reloj.Location = new Point(321, 393);
-            lbl_Reloj.Margin = new Padding(5, 0, 5, 0);
-            lbl_Reloj.Name = "lbl_Reloj";
-            lbl_Reloj.Size = new Size(45, 21);
-            lbl_Reloj.TabIndex = 6;
-            lbl_Reloj.Text = "Reloj";
-            // 
             // cursosToolStripMenuItem
             // 
             cursosToolStripMenuItem.Name = "cursosToolStripMenuItem";
@@ -325,6 +262,69 @@
             profesoresToolStripMenuItem.Text = "Profesores";
             profesoresToolStripMenuItem.Click += profesoresToolStripMenuItem_Click;
             // 
+            // ayudaToolStripMenuItem
+            // 
+            ayudaToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { contenidoToolStripMenuItem, índiceToolStripMenuItem, buscarToolStripMenuItem, toolStripSeparator5, acercadeToolStripMenuItem });
+            ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
+            ayudaToolStripMenuItem.Size = new Size(66, 25);
+            ayudaToolStripMenuItem.Text = "&Ayuda";
+            // 
+            // contenidoToolStripMenuItem
+            // 
+            contenidoToolStripMenuItem.Name = "contenidoToolStripMenuItem";
+            contenidoToolStripMenuItem.Size = new Size(156, 26);
+            contenidoToolStripMenuItem.Text = "&Contenido";
+            // 
+            // índiceToolStripMenuItem
+            // 
+            índiceToolStripMenuItem.Name = "índiceToolStripMenuItem";
+            índiceToolStripMenuItem.Size = new Size(156, 26);
+            índiceToolStripMenuItem.Text = "Índ&ice";
+            // 
+            // buscarToolStripMenuItem
+            // 
+            buscarToolStripMenuItem.Name = "buscarToolStripMenuItem";
+            buscarToolStripMenuItem.Size = new Size(156, 26);
+            buscarToolStripMenuItem.Text = "&Buscar";
+            // 
+            // toolStripSeparator5
+            // 
+            toolStripSeparator5.Name = "toolStripSeparator5";
+            toolStripSeparator5.Size = new Size(153, 6);
+            // 
+            // acercadeToolStripMenuItem
+            // 
+            acercadeToolStripMenuItem.Name = "acercadeToolStripMenuItem";
+            acercadeToolStripMenuItem.Size = new Size(156, 26);
+            acercadeToolStripMenuItem.Text = "&Acerca de...";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
+            label1.Location = new Point(321, 60);
+            label1.Margin = new Padding(5, 0, 5, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(128, 30);
+            label1.TabIndex = 1;
+            label1.Text = "Bienvenido";
+            // 
+            // timer1
+            // 
+            timer1.Interval = 1000;
+            timer1.Tick += timer1_Tick;
+            // 
+            // lbl_Reloj
+            // 
+            lbl_Reloj.AutoSize = true;
+            lbl_Reloj.Font = new Font("Segoe UI", 12F);
+            lbl_Reloj.Location = new Point(306, 422);
+            lbl_Reloj.Margin = new Padding(5, 0, 5, 0);
+            lbl_Reloj.Name = "lbl_Reloj";
+            lbl_Reloj.Size = new Size(45, 21);
+            lbl_Reloj.TabIndex = 6;
+            lbl_Reloj.Text = "Reloj";
+            // 
             // frm_Principal
             // 
             AutoScaleDimensions = new SizeF(11F, 25F);
@@ -337,6 +337,7 @@
             MainMenuStrip = menuStrip1;
             Margin = new Padding(5);
             Name = "frm_Principal";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Principal";
             Load += frm_Principal_Load;
             menuStrip1.ResumeLayout(false);

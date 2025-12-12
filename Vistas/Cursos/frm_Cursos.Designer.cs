@@ -81,9 +81,9 @@
             // 
             lst_Cursos.FormattingEnabled = true;
             lst_Cursos.ItemHeight = 25;
-            lst_Cursos.Location = new Point(460, 60);
+            lst_Cursos.Location = new Point(536, 60);
             lst_Cursos.Name = "lst_Cursos";
-            lst_Cursos.Size = new Size(340, 379);
+            lst_Cursos.Size = new Size(339, 429);
             lst_Cursos.TabIndex = 0;
             lst_Cursos.DoubleClick += lst_Cursos_DoubleClick;
             // 
@@ -127,21 +127,21 @@
             dtp_FechaInicio.Enabled = false;
             dtp_FechaInicio.Location = new Point(24, 350);
             dtp_FechaInicio.Name = "dtp_FechaInicio";
-            dtp_FechaInicio.Size = new Size(200, 32);
+            dtp_FechaInicio.Size = new Size(257, 32);
             dtp_FechaInicio.TabIndex = 5;
             // 
             // dtp_FechaFin
             // 
             dtp_FechaFin.Enabled = false;
-            dtp_FechaFin.Location = new Point(260, 350);
+            dtp_FechaFin.Location = new Point(25, 388);
             dtp_FechaFin.Name = "dtp_FechaFin";
-            dtp_FechaFin.Size = new Size(200, 32);
+            dtp_FechaFin.Size = new Size(257, 32);
             dtp_FechaFin.TabIndex = 6;
             // 
             // nud_Capacidad
             // 
             nud_Capacidad.Enabled = false;
-            nud_Capacidad.Location = new Point(24, 420);
+            nud_Capacidad.Location = new Point(24, 463);
             nud_Capacidad.Maximum = new decimal(new int[] { 10000, 0, 0, 0 });
             nud_Capacidad.Name = "nud_Capacidad";
             nud_Capacidad.Size = new Size(120, 32);
@@ -150,7 +150,7 @@
             // txt_Precio
             // 
             txt_Precio.Enabled = false;
-            txt_Precio.Location = new Point(160, 420);
+            txt_Precio.Location = new Point(160, 463);
             txt_Precio.Name = "txt_Precio";
             txt_Precio.Size = new Size(120, 32);
             txt_Precio.TabIndex = 8;
@@ -158,14 +158,14 @@
             // cmb_Profesor
             // 
             cmb_Profesor.Enabled = false;
-            cmb_Profesor.Location = new Point(300, 420);
+            cmb_Profesor.Location = new Point(300, 463);
             cmb_Profesor.Name = "cmb_Profesor";
             cmb_Profesor.Size = new Size(200, 33);
             cmb_Profesor.TabIndex = 9;
             // 
             // btn_Nuevo
             // 
-            btn_Nuevo.Location = new Point(24, 480);
+            btn_Nuevo.Location = new Point(25, 520);
             btn_Nuevo.Name = "btn_Nuevo";
             btn_Nuevo.Size = new Size(110, 36);
             btn_Nuevo.TabIndex = 10;
@@ -175,7 +175,7 @@
             // btn_Guardar
             // 
             btn_Guardar.Enabled = false;
-            btn_Guardar.Location = new Point(150, 480);
+            btn_Guardar.Location = new Point(171, 520);
             btn_Guardar.Name = "btn_Guardar";
             btn_Guardar.Size = new Size(110, 36);
             btn_Guardar.TabIndex = 11;
@@ -184,7 +184,7 @@
             // 
             // btn_Editar
             // 
-            btn_Editar.Location = new Point(460, 460);
+            btn_Editar.Location = new Point(483, 520);
             btn_Editar.Name = "btn_Editar";
             btn_Editar.Size = new Size(110, 36);
             btn_Editar.TabIndex = 12;
@@ -194,7 +194,7 @@
             // btn_Cancelar
             // 
             btn_Cancelar.Enabled = false;
-            btn_Cancelar.Location = new Point(280, 480);
+            btn_Cancelar.Location = new Point(328, 520);
             btn_Cancelar.Name = "btn_Cancelar";
             btn_Cancelar.Size = new Size(110, 36);
             btn_Cancelar.TabIndex = 13;
@@ -204,7 +204,7 @@
             // btn_Eliminar
             // 
             btn_Eliminar.ForeColor = Color.FromArgb(192, 0, 0);
-            btn_Eliminar.Location = new Point(590, 460);
+            btn_Eliminar.Location = new Point(631, 520);
             btn_Eliminar.Name = "btn_Eliminar";
             btn_Eliminar.Size = new Size(110, 36);
             btn_Eliminar.TabIndex = 14;
@@ -213,7 +213,7 @@
             // 
             // btn_Salir
             // 
-            btn_Salir.Location = new Point(700, 460);
+            btn_Salir.Location = new Point(775, 520);
             btn_Salir.Name = "btn_Salir";
             btn_Salir.Size = new Size(100, 36);
             btn_Salir.TabIndex = 15;
@@ -259,7 +259,7 @@
             // labelCapacidad
             // 
             labelCapacidad.AutoSize = true;
-            labelCapacidad.Location = new Point(24, 390);
+            labelCapacidad.Location = new Point(24, 433);
             labelCapacidad.Name = "labelCapacidad";
             labelCapacidad.Size = new Size(225, 25);
             labelCapacidad.TabIndex = 20;
@@ -268,7 +268,7 @@
             // labelPrecio
             // 
             labelPrecio.AutoSize = true;
-            labelPrecio.Location = new Point(160, 390);
+            labelPrecio.Location = new Point(160, 433);
             labelPrecio.Name = "labelPrecio";
             labelPrecio.Size = new Size(65, 25);
             labelPrecio.TabIndex = 21;
@@ -277,7 +277,7 @@
             // labelProfesor
             // 
             labelProfesor.AutoSize = true;
-            labelProfesor.Location = new Point(300, 390);
+            labelProfesor.Location = new Point(300, 433);
             labelProfesor.Name = "labelProfesor";
             labelProfesor.Size = new Size(83, 25);
             labelProfesor.TabIndex = 22;
@@ -285,7 +285,7 @@
             // 
             // frm_Cursos
             // 
-            ClientSize = new Size(820, 560);
+            ClientSize = new Size(908, 586);
             Controls.Add(lst_Cursos);
             Controls.Add(lblTitulo);
             Controls.Add(txt_Titulo);
@@ -313,6 +313,7 @@
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             Name = "frm_Cursos";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "Gestión de Cursos";
             Load += frm_Cursos_Load_1;
             ((System.ComponentModel.ISupportInitialize)nud_Capacidad).EndInit();

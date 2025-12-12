@@ -129,7 +129,7 @@
             // 
             // btn_Nuevo
             // 
-            btn_Nuevo.Location = new Point(24, 430);
+            btn_Nuevo.Location = new Point(24, 475);
             btn_Nuevo.Name = "btn_Nuevo";
             btn_Nuevo.Size = new Size(110, 36);
             btn_Nuevo.TabIndex = 7;
@@ -139,7 +139,7 @@
             // btn_Guardar
             // 
             btn_Guardar.Enabled = false;
-            btn_Guardar.Location = new Point(150, 430);
+            btn_Guardar.Location = new Point(140, 475);
             btn_Guardar.Name = "btn_Guardar";
             btn_Guardar.Size = new Size(110, 36);
             btn_Guardar.TabIndex = 8;
@@ -148,7 +148,7 @@
             // 
             // btn_Editar
             // 
-            btn_Editar.Location = new Point(360, 460);
+            btn_Editar.Location = new Point(372, 475);
             btn_Editar.Name = "btn_Editar";
             btn_Editar.Size = new Size(110, 36);
             btn_Editar.TabIndex = 9;
@@ -158,7 +158,7 @@
             // btn_Cancelar
             // 
             btn_Cancelar.Enabled = false;
-            btn_Cancelar.Location = new Point(280, 430);
+            btn_Cancelar.Location = new Point(256, 475);
             btn_Cancelar.Name = "btn_Cancelar";
             btn_Cancelar.Size = new Size(110, 36);
             btn_Cancelar.TabIndex = 10;
@@ -168,7 +168,7 @@
             // btn_Eliminar
             // 
             btn_Eliminar.ForeColor = Color.FromArgb(192, 0, 0);
-            btn_Eliminar.Location = new Point(490, 460);
+            btn_Eliminar.Location = new Point(490, 475);
             btn_Eliminar.Name = "btn_Eliminar";
             btn_Eliminar.Size = new Size(110, 36);
             btn_Eliminar.TabIndex = 11;
@@ -177,7 +177,7 @@
             // 
             // btn_Salir
             // 
-            btn_Salir.Location = new Point(610, 460);
+            btn_Salir.Location = new Point(610, 475);
             btn_Salir.Name = "btn_Salir";
             btn_Salir.Size = new Size(90, 36);
             btn_Salir.TabIndex = 12;
@@ -254,6 +254,7 @@
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             Name = "frm_Estudiantes";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "Gestión de Estudiantes";
             Load += frm_Estudiantes_Load_1;
             ResumeLayout(false);

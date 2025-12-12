@@ -55,9 +55,9 @@
             // 
             lst_Inscripciones.FormattingEnabled = true;
             lst_Inscripciones.ItemHeight = 25;
-            lst_Inscripciones.Location = new Point(360, 60);
+            lst_Inscripciones.Location = new Point(309, 62);
             lst_Inscripciones.Name = "lst_Inscripciones";
-            lst_Inscripciones.Size = new Size(340, 379);
+            lst_Inscripciones.Size = new Size(446, 329);
             lst_Inscripciones.TabIndex = 0;
             lst_Inscripciones.DoubleClick += lst_Inscripciones_DoubleClick;
             // 
@@ -75,19 +75,19 @@
             // 
             cmb_Estudiante.Location = new Point(24, 110);
             cmb_Estudiante.Name = "cmb_Estudiante";
-            cmb_Estudiante.Size = new Size(300, 33);
+            cmb_Estudiante.Size = new Size(266, 33);
             cmb_Estudiante.TabIndex = 2;
             // 
             // cmb_Curso
             // 
             cmb_Curso.Location = new Point(24, 180);
             cmb_Curso.Name = "cmb_Curso";
-            cmb_Curso.Size = new Size(300, 33);
+            cmb_Curso.Size = new Size(266, 33);
             cmb_Curso.TabIndex = 3;
             // 
             // btn_Inscribir
             // 
-            btn_Inscribir.Location = new Point(24, 240);
+            btn_Inscribir.Location = new Point(24, 460);
             btn_Inscribir.Name = "btn_Inscribir";
             btn_Inscribir.Size = new Size(110, 36);
             btn_Inscribir.TabIndex = 4;
@@ -96,7 +96,8 @@
             // 
             // btn_CancelarInscripcion
             // 
-            btn_CancelarInscripcion.Location = new Point(150, 240);
+            btn_CancelarInscripcion.ForeColor = Color.FromArgb(192, 0, 0);
+            btn_CancelarInscripcion.Location = new Point(140, 460);
             btn_CancelarInscripcion.Name = "btn_CancelarInscripcion";
             btn_CancelarInscripcion.Size = new Size(150, 36);
             btn_CancelarInscripcion.TabIndex = 5;
@@ -105,7 +106,7 @@
             // 
             // btn_Refrescar
             // 
-            btn_Refrescar.Location = new Point(24, 300);
+            btn_Refrescar.Location = new Point(296, 460);
             btn_Refrescar.Name = "btn_Refrescar";
             btn_Refrescar.Size = new Size(110, 36);
             btn_Refrescar.TabIndex = 6;
@@ -114,7 +115,7 @@
             // 
             // btn_Salir
             // 
-            btn_Salir.Location = new Point(610, 460);
+            btn_Salir.Location = new Point(412, 460);
             btn_Salir.Name = "btn_Salir";
             btn_Salir.Size = new Size(90, 36);
             btn_Salir.TabIndex = 7;
@@ -141,9 +142,9 @@
             // 
             // btn_Reportes
             // 
-            btn_Reportes.Location = new Point(156, 399);
+            btn_Reportes.Location = new Point(631, 428);
             btn_Reportes.Name = "btn_Reportes";
-            btn_Reportes.Size = new Size(144, 40);
+            btn_Reportes.Size = new Size(124, 68);
             btn_Reportes.TabIndex = 10;
             btn_Reportes.Text = "Reportes";
             btn_Reportes.UseVisualStyleBackColor = true;
@@ -151,7 +152,7 @@
             // 
             // frm_Inscripciones
             // 
-            ClientSize = new Size(720, 520);
+            ClientSize = new Size(781, 520);
             Controls.Add(btn_Reportes);
             Controls.Add(lst_Inscripciones);
             Controls.Add(lblTitulo);
@@ -167,6 +168,7 @@
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             Name = "frm_Inscripciones";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "Gestión de Inscripciones";
             Load += frm_Inscripciones_Load_1;
             ResumeLayout(false);

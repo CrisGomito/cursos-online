@@ -224,7 +224,7 @@ namespace Cursos_Online.Vistas.Cursos
                 return;
             }
             var id = (int)lst_Cursos.SelectedValue;
-            var confirm = MessageBox.Show("¿Está seguro de eliminar este curso? (Eliminación lógica)", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            var confirm = MessageBox.Show("¿Está seguro de eliminar este curso?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (confirm == DialogResult.Yes)
             {
                 var ok = _controller.EliminarCurso(id);
